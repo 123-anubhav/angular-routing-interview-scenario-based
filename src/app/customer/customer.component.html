@@ -1,0 +1,48 @@
+<div class="container">
+    user id is :: {{user.id}}
+    <br />
+    user name id :: {{user.name}}
+
+    <hr />
+    <button>
+        <h5>
+            <!-- 
+                WHEN WE CLICK TO LOAD DYNAMIC VALUE INSIDE COMPONENTS
+                IT IS NOT REFLECT VALUE IN COMPONENTS .HTML PAGE 
+                BUT IN URL IT REFLECT 
+    SOLUTION :  SO WE NEED TO SUBSCRIBE ITS PARAM  VALUE
+                AND PARAMSUBSCRIPTION TO UNSUBSCRIBE WHEN COMPONENT WILL UNLOAD 
+                [UNLOAD MEANS WHEN YOU ARE MOVING TO ANOTHER COMPONENTS (ngOnDestroy()->ActivatedRouterObj.unsubscribe())] 
+                
+            -->
+            <!--        "---------------    REAL TIME USE CASE :: SUBSCRIBE      ------------------------" 
+                REAL TIME USE CASE OF SUBSCRIBE IS WHEN SEARCHNG LIKE E-COMMERCE WEBSITE
+                IN PRODUCTS LIKE MOBILE COMPONENT YOU WILL USE
+                FILTER LIKE BRAND, PRICE 
+                THEN IN THIS CASE SUBSCRIBE CONCEPT WILL USE                
+            -->
+            <a [routerLink]="['/customers',50,'Raghu']">load Raghu</a>
+        </h5>
+    </button>
+    <br/><br/>
+    <button>
+        <h5>
+              <!-- 
+                WHEN WE CLICK TO LOAD DYNAMIC VALUE INSIDE COMPONENTS
+                IT IS NOT REFLECT VALUE IN COMPONENTS .HTML PAGE 
+                BUT IN URL IT REFLECT 
+    SOLUTION :  SO WE NEED TO SUBSCRIBE ITS PARAM  VALUE
+                AND PARAMSUBSCRIPTION TO UNSUBSCRIBE WHEN COMPONENT WILL UNLOAD 
+                [UNLOAD MEANS WHEN YOU ARE MOVING TO ANOTHER COMPONENTS (ngOnDestroy()->ActivatedRouterObj.unsubscribe())]   
+            -->
+
+             <!--        "---------------    REAL TIME USE CASE :: SUBSCRIBE     ------------------------" 
+                REAL TIME USE CASE OF SUBSCRIBE IS WHEN SEARCHNG LIKE E-COMMERCE WEBSITE
+                IN PRODUCTS LIKE MOBILE COMPONENT YOU WILL USE
+                FILTER LIKE BRAND, PRICE 
+                THEN IN THIS CASE SUBSCRIBE CONCEPT WILL USE                
+            -->
+            <a [routerLink]="['/customers',60,'Sandhya']">load Sandhya</a>
+        </h5>
+    </button>
+</div>

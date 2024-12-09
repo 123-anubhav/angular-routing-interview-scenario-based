@@ -1,0 +1,12 @@
+.menu-item {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(122, 9, 9);
+    cursor: pointer;
+}
+
+/* .menu-item:hover {
+    background-color: #6c757d; /* A slightly darker shade for hover effect 
+    color: #ffc107; /* Change text color on hover 
+} */

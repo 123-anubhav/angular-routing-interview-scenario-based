@@ -1,0 +1,19 @@
+<div class="container text-center p-3">
+  <ul class="list-unstyled">
+    <li class="menu-item" *ngFor="let product of products" [routerLink]="[product.id, product.name]"
+      [queryParams]="{allowEdit: product.name === 'TV' ? '1' : '0'}">
+      {{ product.name }}
+    </li>
+  </ul>
+</div>
+<router-outlet></router-outlet>
+
+<!-- 
+     [queryParams]="{allowEdit: product.name === product.name ? '1' : '0'}"
+     USE FOR @REQUESTPARAM IN SPRING BOOT
+ -->
+
+<!-- 
+   EXPLICIT WE CREATED A CONDITION === 'TV 
+   allowEdit IS 0
+-->

@@ -1,0 +1,20 @@
+<div class="container">
+  <h3 class="text-danger">Routing Examples</h3>
+  <!-- As a link -->
+  <nav class="navbar navbar-light bg-light">
+    <!-- 
+      routerLinkActive="active" 
+      IF WE NOT MENTION [  routerLinkActivated="true" ]
+      THEN IT WILL ALWAYS COMES IN 1ST <A> TAG
+        IF WE MENTION [ routerLinkActivated="true" ]
+        THEN IT COMES WHERE I MOVE TO MY ANOTHER PAGE
+     -->
+    <a class="navbar-brand" routerLink="/home" routerLinkActive="active" routerLinkActivated="true">Home</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="navbar-brand" routerLink="/products" routerLinkActive="active">Products</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="navbar-brand" routerLink="/customers" routerLinkActive="active">Customers</a>
+  </nav>
+  
+</div>
+<router-outlet />
+

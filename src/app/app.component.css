@@ -1,0 +1,13 @@
+/* Styles for active route links */
+ .active {
+    color: rgb(255, 249, 249);
+    background-color: #0a0a0a; /* Blue background */
+   
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+  }
+
+.txt-decoration{
+   text-decoration: none;
+}
+  

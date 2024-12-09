@@ -1,0 +1,24 @@
+<ng-container *ngIf="allowEdit">
+    <div class="container">
+        product id is :: {{product.id}}
+        <br />
+        product name id :: {{product.name}}
+        <hr />
+    </div>
+</ng-container>
+
+<ng-container *ngIf="!allowEdit">
+    <div class="container ">
+        YOU ARE NOT ALLOW TO EDIT<BR />
+        YOU CAN NOT ACCESS THIS PAGE
+        <hr />
+        <div class="container text-info">
+            <p class="h3">FOR BETTER UNDERSTANDING SEE YOUR URL <b class="text-danger">'?allowEdit=0'</b>
+                <br />
+                THIS IS AN EXAMPLE FOR QUERY PARAMS IN ANGULAR
+                <br />
+                I INTESIONALLY CHECK FOR IF PRODUCT IS 'TV' THEN TRUE OTHERWISE IT IS FALSE
+            </p>
+        </div>
+    </div>
+</ng-container>
